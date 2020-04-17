@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    tools:context=".MainActivity"
+    android:id="@+id/osnova"
+    android:background="#e7e8ea"
+    android:contextClickable="true" tools:targetApi="m">
+
+    <TextView
+        android:id="@+id/textInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="22sp"
+        android:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/ButPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        tools:background="@android:color/white">
+
+
+        <!--D10-->
+
+
+        <!--D11-->
+        <ImageButton
+            android:id="@+id/ImageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="230dp"
+            android:src="@drawable/niz" />
+
+
+        <!--D12-->
+        <ImageButton
+            android:id="@+id/ImageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="110dp"
+            android:src="@drawable/verh" />
+
+        <ImageButton
+            android:id="@+id/ImageButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="170dp"
+            android:src="@drawable/levo" />
+
+        <ImageButton
+            android:id="@+id/ImageButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:layout_marginRight="84dp"
+            android:layout_marginTop="170dp"
+            android:src="@drawable/pravo" />
+
+
+        <!--D13-->
+
+        <ImageButton
+            android:id="@+id/ImageButton7"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="260dp"
+            android:src="@drawable/rotateleft"
+            tools:background="@android:color/white" />
+
+        <ImageButton
+            android:id="@+id/ImageButton8"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="right|top"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="260dp"
+            android:src="@drawable/rotateright"
+            tools:background="@android:color/white" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/LinePanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        tools:background="@android:color/white">
+
+        <Button
+            android:id="@+id/KPplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="100dp"
+            android:onClick="onClickKPplus"
+            android:text="KP+" />
+
+        <Button
+            android:id="@+id/KPmines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="150dp"
+            android:onClick="onClickKPmines"
+            android:text="KP-" />
+
+        <Button
+            android:id="@+id/KDplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:onClick="onClickKDplus"
+            android:text="KD+" />
+
+        <Button
+            android:id="@+id/KDmines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:onClick="onClickKDmines"
+            android:text="KD-" />
+
+        <Switch
+            android:id="@+id/switchTurbina"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="130dp"
+            android:text="turbina" />
+
+        <Switch
+            android:id="@+id/SensorsPrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="15dp"
+            android:text="Sensors" />
+
+        <Switch
+            android:id="@+id/SpeedPrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="15dp"
+            android:text="Speed" />
+
+        <Button
+            android:id="@+id/AllFrom"
+            android:layout_width="106dp"
+            android:layout_height="69dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="220dp"
+            android:onClick="onClickAllFrom"
+            android:text="AllFrom" />
+
+        <Button
+            android:id="@+id/calibration"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50dp"
+            android:gravity="center_vertical"
+            android:onClick="onClickCalibrateB"
+            android:text="calibration"
+            android:textSize="12sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/setupTurbina"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right"
+            android:layout_marginTop="50dp"
+            android:gravity="center_vertical"
+            android:onClick="onClickSetupTurbina"
+            android:text="Setup Turbina"
+            android:textSize="12sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/AllTo"
+            android:layout_width="106dp"
+            android:layout_height="69dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="220dp"
+            android:onClick="onClickAllTo"
+            android:text="AllTo" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/AlwaysPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        tools:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/textArdu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="380dp"
+            android:textSize="18dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textArdu2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="320dp"
+            android:textSize="18dp"
+            android:visibility="visible" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="52dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="185dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Tooltip"
+            android:textOff="off"
+            android:textOn="on" />
+
+        <Switch
+            android:id="@+id/switchManual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:text="Manual Control" />
+
+        <!-- <SeekBar
+            android:id="@+id/seekBar"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:max="2000"
+            android:min="1000"
+            android:progress="1000" />-->
+
+        <TextView
+            android:id="@+id/d10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:text="STOPPED"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/text"
+            android:layout_width="292dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="430dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="430dp"
+            android:onClick="onClickSend"
+            android:text="send" />
+
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/pairedlist"
+        android:layout_width="match_parent"
+        android:layout_height="423dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="88dp"
+        android:visibility="visible" />
+
+</RelativeLayout>
